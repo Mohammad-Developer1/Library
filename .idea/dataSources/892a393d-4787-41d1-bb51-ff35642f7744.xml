@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.53">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>2926</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2950</IntrospectionStateNumber>
       <ServerVersion>16.4</ServerVersion>
       <StartupTime>1731582465</StartupTime>
       <TimeZones>true ACDT
@@ -807,7 +807,7 @@ false Zulu
 14643||10|C|G
 14643||-9223372036854775808|U|G
 14643||10|U|G</Grants>
-      <IntrospectionStateNumber>2926</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2950</IntrospectionStateNumber>
       <ObjectId>27327</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4271,8 +4271,8 @@ false Zulu
     <schema id="273" parent="4" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>2926</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-11-17.12:10:11</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>2950</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-11-17.12:57:17</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -7649,26 +7649,26 @@ false Zulu
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
     <sequence id="519" parent="273" name="book_seq">
-      <ObjectId>27366</ObjectId>
+      <ObjectId>27416</ObjectId>
       <SequenceIdentity>1+50</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>2914</StateNumber>
+      <StateNumber>2938</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="520" parent="273" name="category_seq">
-      <ObjectId>27367</ObjectId>
+      <ObjectId>27417</ObjectId>
       <SequenceIdentity>1+50</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>2915</StateNumber>
+      <StateNumber>2939</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="521" parent="273" name="subject_seq">
-      <ObjectId>27368</ObjectId>
+      <ObjectId>27418</ObjectId>
       <SequenceIdentity>1+50</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>2916</StateNumber>
+      <StateNumber>2940</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
@@ -7681,40 +7681,40 @@ false Zulu
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="523" parent="273" name="users_seq">
-      <ObjectId>27369</ObjectId>
+      <ObjectId>27419</ObjectId>
       <SequenceIdentity>1+50</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>2917</StateNumber>
+      <StateNumber>2941</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <table id="524" parent="273" name="book">
-      <ObjectId>27370</ObjectId>
-      <StateNumber>2923</StateNumber>
+      <ObjectId>27420</ObjectId>
+      <StateNumber>2947</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="525" parent="273" name="category">
-      <ObjectId>27377</ObjectId>
-      <StateNumber>2925</StateNumber>
+      <ObjectId>27427</ObjectId>
+      <StateNumber>2949</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="526" parent="273" name="j_user_books">
-      <ObjectId>27382</ObjectId>
-      <StateNumber>2923</StateNumber>
+      <ObjectId>27432</ObjectId>
+      <StateNumber>2947</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="527" parent="273" name="subject">
-      <ObjectId>27387</ObjectId>
-      <StateNumber>2925</StateNumber>
+      <ObjectId>27437</ObjectId>
+      <StateNumber>2949</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="528" parent="273" name="users">
-      <ObjectId>27394</ObjectId>
-      <StateNumber>2924</StateNumber>
+      <ObjectId>27444</ObjectId>
+      <StateNumber>2948</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -7791,219 +7791,225 @@ false Zulu
     <column id="539" parent="524" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>2918</StateNumber>
+      <StateNumber>2942</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
     <column id="540" parent="524" name="number_of_pages">
       <Position>2</Position>
-      <StateNumber>2918</StateNumber>
+      <StateNumber>2942</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
     <column id="541" parent="524" name="price">
       <Position>3</Position>
-      <StateNumber>2918</StateNumber>
+      <StateNumber>2942</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
     <column id="542" parent="524" name="author">
       <Position>4</Position>
-      <StateNumber>2918</StateNumber>
+      <StateNumber>2942</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="543" parent="524" name="title">
       <Position>5</Position>
-      <StateNumber>2918</StateNumber>
+      <StateNumber>2942</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <index id="544" parent="524" name="book_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>27375</ObjectId>
+      <ObjectId>27425</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2918</StateNumber>
+      <StateNumber>2942</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="545" parent="524" name="book_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>27376</ObjectId>
+      <ObjectId>27426</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2918</StateNumber>
-      <UnderlyingIndexId>27375</UnderlyingIndexId>
+      <StateNumber>2942</StateNumber>
+      <UnderlyingIndexId>27425</UnderlyingIndexId>
     </key>
     <column id="546" parent="525" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>2919</StateNumber>
+      <StateNumber>2943</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
     <column id="547" parent="525" name="title">
       <Position>2</Position>
-      <StateNumber>2919</StateNumber>
+      <StateNumber>2943</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <index id="548" parent="525" name="category_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>27380</ObjectId>
+      <ObjectId>27430</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2919</StateNumber>
+      <StateNumber>2943</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="549" parent="525" name="category_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>27381</ObjectId>
+      <ObjectId>27431</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2919</StateNumber>
-      <UnderlyingIndexId>27380</UnderlyingIndexId>
+      <StateNumber>2943</StateNumber>
+      <UnderlyingIndexId>27430</UnderlyingIndexId>
     </key>
     <column id="550" parent="526" name="book_id">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>2920</StateNumber>
+      <StateNumber>2944</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
     <column id="551" parent="526" name="user_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>2920</StateNumber>
+      <StateNumber>2944</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
     <foreign-key id="552" parent="526" name="fk75cwi0gr348ivcvj0gm118inu">
       <ColNames>book_id</ColNames>
-      <ObjectId>27401</ObjectId>
-      <StateNumber>2923</StateNumber>
+      <ObjectId>27451</ObjectId>
+      <StateNumber>2947</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>27370</RefTableId>
+      <RefTableId>27420</RefTableId>
     </foreign-key>
     <foreign-key id="553" parent="526" name="fknwm7gkknh09acwc3psqxxili2">
       <ColNames>user_id</ColNames>
-      <ObjectId>27406</ObjectId>
-      <StateNumber>2924</StateNumber>
+      <ObjectId>27456</ObjectId>
+      <StateNumber>2948</StateNumber>
       <RefKeyColPositions>2</RefKeyColPositions>
-      <RefTableId>27394</RefTableId>
+      <RefTableId>27444</RefTableId>
     </foreign-key>
     <index id="554" parent="526" name="j_user_books_book_id_key">
       <ColNames>book_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>27385</ObjectId>
-      <StateNumber>2920</StateNumber>
+      <ObjectId>27435</ObjectId>
+      <StateNumber>2944</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="555" parent="526" name="j_user_books_book_id_key">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>27386</ObjectId>
-      <StateNumber>2920</StateNumber>
-      <UnderlyingIndexId>27385</UnderlyingIndexId>
+      <ObjectId>27436</ObjectId>
+      <StateNumber>2944</StateNumber>
+      <UnderlyingIndexId>27435</UnderlyingIndexId>
     </key>
     <column id="556" parent="527" name="category_id">
       <Position>1</Position>
-      <StateNumber>2921</StateNumber>
+      <StateNumber>2945</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
     <column id="557" parent="527" name="id">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>2921</StateNumber>
+      <StateNumber>2945</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="558" parent="527" name="fkgn8fsa4w78swvco76g88ow6e9">
+    <column id="558" parent="527" name="title">
+      <Position>3</Position>
+      <StateNumber>2945</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="559" parent="527" name="fkgn8fsa4w78swvco76g88ow6e9">
       <ColNames>category_id</ColNames>
-      <ObjectId>27411</ObjectId>
-      <StateNumber>2925</StateNumber>
+      <ObjectId>27461</ObjectId>
+      <StateNumber>2949</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>27377</RefTableId>
+      <RefTableId>27427</RefTableId>
     </foreign-key>
-    <index id="559" parent="527" name="subject_category_id_key">
+    <index id="560" parent="527" name="subject_category_id_key">
       <ColNames>category_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>27392</ObjectId>
-      <StateNumber>2921</StateNumber>
+      <ObjectId>27442</ObjectId>
+      <StateNumber>2945</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="560" parent="527" name="subject_pkey">
+    <index id="561" parent="527" name="subject_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>27390</ObjectId>
+      <ObjectId>27440</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2921</StateNumber>
+      <StateNumber>2945</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="561" parent="527" name="subject_pkey">
+    <key id="562" parent="527" name="subject_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>27391</ObjectId>
+      <ObjectId>27441</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2921</StateNumber>
-      <UnderlyingIndexId>27390</UnderlyingIndexId>
+      <StateNumber>2945</StateNumber>
+      <UnderlyingIndexId>27440</UnderlyingIndexId>
     </key>
-    <key id="562" parent="527" name="subject_category_id_key">
+    <key id="563" parent="527" name="subject_category_id_key">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>27393</ObjectId>
-      <StateNumber>2921</StateNumber>
-      <UnderlyingIndexId>27392</UnderlyingIndexId>
+      <ObjectId>27443</ObjectId>
+      <StateNumber>2945</StateNumber>
+      <UnderlyingIndexId>27442</UnderlyingIndexId>
     </key>
-    <column id="563" parent="528" name="birth_date">
+    <column id="564" parent="528" name="birth_date">
       <Position>1</Position>
-      <StateNumber>2922</StateNumber>
+      <StateNumber>2946</StateNumber>
       <StoredType>date|0s</StoredType>
       <TypeId>1082</TypeId>
     </column>
-    <column id="564" parent="528" name="id">
+    <column id="565" parent="528" name="id">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>2922</StateNumber>
+      <StateNumber>2946</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="565" parent="528" name="firse_name">
+    <column id="566" parent="528" name="firse_name">
       <Position>3</Position>
-      <StateNumber>2922</StateNumber>
+      <StateNumber>2946</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="566" parent="528" name="last_name">
+    <column id="567" parent="528" name="last_name">
       <Position>4</Position>
-      <StateNumber>2922</StateNumber>
+      <StateNumber>2946</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="567" parent="528" name="password">
+    <column id="568" parent="528" name="password">
       <Position>5</Position>
-      <StateNumber>2922</StateNumber>
+      <StateNumber>2946</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <index id="568" parent="528" name="users_pkey">
+    <index id="569" parent="528" name="users_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>27399</ObjectId>
+      <ObjectId>27449</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2922</StateNumber>
+      <StateNumber>2946</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="569" parent="528" name="users_pkey">
+    <key id="570" parent="528" name="users_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>27400</ObjectId>
+      <ObjectId>27450</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2922</StateNumber>
-      <UnderlyingIndexId>27399</UnderlyingIndexId>
+      <StateNumber>2946</StateNumber>
+      <UnderlyingIndexId>27449</UnderlyingIndexId>
     </key>
-    <column id="570" parent="534" name="id">
+    <column id="571" parent="534" name="id">
       <DefaultExpression>nextval(&apos;author_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -8012,25 +8018,25 @@ false Zulu
       <SequenceId>16872</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="571" parent="534" name="first_name">
+    <column id="572" parent="534" name="first_name">
       <Position>2</Position>
       <StateNumber>1563</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="572" parent="534" name="last_name">
+    <column id="573" parent="534" name="last_name">
       <Position>3</Position>
       <StateNumber>1563</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="573" parent="534" name="nationality">
+    <column id="574" parent="534" name="nationality">
       <Position>4</Position>
       <StateNumber>1563</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <index id="574" parent="534" name="author_pkey">
+    <index id="575" parent="534" name="author_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16877</ObjectId>
@@ -8039,14 +8045,14 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="575" parent="534" name="author_pkey">
+    <key id="576" parent="534" name="author_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16878</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1563</StateNumber>
       <UnderlyingIndexId>16877</UnderlyingIndexId>
     </key>
-    <column id="576" parent="535" name="id">
+    <column id="577" parent="535" name="id">
       <DefaultExpression>nextval(&apos;author_book_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -8055,19 +8061,19 @@ false Zulu
       <SequenceId>16896</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="577" parent="535" name="author_id">
+    <column id="578" parent="535" name="author_id">
       <Position>2</Position>
       <StateNumber>1565</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="578" parent="535" name="book_id">
+    <column id="579" parent="535" name="book_id">
       <Position>3</Position>
       <StateNumber>1565</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="579" parent="535" name="author_book_author_id_fkey">
+    <foreign-key id="580" parent="535" name="author_book_author_id_fkey">
       <ColNames>author_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16903</ObjectId>
@@ -8075,7 +8081,7 @@ false Zulu
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16873</RefTableId>
     </foreign-key>
-    <foreign-key id="580" parent="535" name="author_book_book_id_fkey">
+    <foreign-key id="581" parent="535" name="author_book_book_id_fkey">
       <ColNames>book_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16908</ObjectId>
@@ -8083,7 +8089,7 @@ false Zulu
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16866</RefTableId>
     </foreign-key>
-    <index id="581" parent="535" name="author_book_pkey">
+    <index id="582" parent="535" name="author_book_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16901</ObjectId>
@@ -8092,14 +8098,14 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="582" parent="535" name="author_book_pkey">
+    <key id="583" parent="535" name="author_book_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16902</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1565</StateNumber>
       <UnderlyingIndexId>16901</UnderlyingIndexId>
     </key>
-    <column id="583" parent="536" name="id">
+    <column id="584" parent="536" name="id">
       <DefaultExpression>nextval(&apos;book_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -8108,25 +8114,25 @@ false Zulu
       <SequenceId>16865</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="584" parent="536" name="book_name">
+    <column id="585" parent="536" name="book_name">
       <Position>2</Position>
       <StateNumber>1562</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="585" parent="536" name="category">
+    <column id="586" parent="536" name="category">
       <Position>3</Position>
       <StateNumber>1562</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="586" parent="536" name="year">
+    <column id="587" parent="536" name="year">
       <Position>4</Position>
       <StateNumber>1562</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <index id="587" parent="536" name="book_pkey">
+    <index id="588" parent="536" name="book_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16870</ObjectId>
@@ -8135,14 +8141,14 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="588" parent="536" name="book_pkey">
+    <key id="589" parent="536" name="book_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16871</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1562</StateNumber>
       <UnderlyingIndexId>16870</UnderlyingIndexId>
     </key>
-    <column id="589" parent="537" name="id">
+    <column id="590" parent="537" name="id">
       <DefaultExpression>nextval(&apos;borrowed_book_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -8151,25 +8157,25 @@ false Zulu
       <SequenceId>16879</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="590" parent="537" name="user_id">
+    <column id="591" parent="537" name="user_id">
       <Position>2</Position>
       <StateNumber>1564</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="591" parent="537" name="book_id">
+    <column id="592" parent="537" name="book_id">
       <Position>3</Position>
       <StateNumber>1564</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="592" parent="537" name="borrowed_date">
+    <column id="593" parent="537" name="borrowed_date">
       <Position>4</Position>
       <StateNumber>1564</StateNumber>
       <StoredType>date|0s</StoredType>
       <TypeId>1082</TypeId>
     </column>
-    <foreign-key id="593" parent="537" name="borrowed_book_user_id_fkey">
+    <foreign-key id="594" parent="537" name="borrowed_book_user_id_fkey">
       <ColNames>user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16886</ObjectId>
@@ -8177,7 +8183,7 @@ false Zulu
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16857</RefTableId>
     </foreign-key>
-    <foreign-key id="594" parent="537" name="borrowed_book_book_id_fkey">
+    <foreign-key id="595" parent="537" name="borrowed_book_book_id_fkey">
       <ColNames>book_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16891</ObjectId>
@@ -8185,7 +8191,7 @@ false Zulu
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16866</RefTableId>
     </foreign-key>
-    <index id="595" parent="537" name="borrowed_book_pkey">
+    <index id="596" parent="537" name="borrowed_book_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16884</ObjectId>
@@ -8194,14 +8200,14 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="596" parent="537" name="borrowed_book_pkey">
+    <key id="597" parent="537" name="borrowed_book_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16885</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1564</StateNumber>
       <UnderlyingIndexId>16884</UnderlyingIndexId>
     </key>
-    <column id="597" parent="538" name="id">
+    <column id="598" parent="538" name="id">
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -8210,25 +8216,25 @@ false Zulu
       <SequenceId>16856</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="598" parent="538" name="first_name">
+    <column id="599" parent="538" name="first_name">
       <Position>2</Position>
       <StateNumber>1559</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="599" parent="538" name="last_name">
+    <column id="600" parent="538" name="last_name">
       <Position>3</Position>
       <StateNumber>1559</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="600" parent="538" name="email">
+    <column id="601" parent="538" name="email">
       <Position>4</Position>
       <StateNumber>1559</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <index id="601" parent="538" name="users_pkey">
+    <index id="602" parent="538" name="users_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16861</ObjectId>
@@ -8237,7 +8243,7 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="602" parent="538" name="users_email_key">
+    <index id="603" parent="538" name="users_email_key">
       <ColNames>email</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16863</ObjectId>
@@ -8248,14 +8254,14 @@ false Zulu
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="603" parent="538" name="users_pkey">
+    <key id="604" parent="538" name="users_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16862</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1559</StateNumber>
       <UnderlyingIndexId>16861</UnderlyingIndexId>
     </key>
-    <key id="604" parent="538" name="users_email_key">
+    <key id="605" parent="538" name="users_email_key">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16864</ObjectId>
       <StateNumber>1559</StateNumber>

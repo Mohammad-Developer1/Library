@@ -18,8 +18,7 @@ public abstract class BaseRepositoryImpl<T extends Serializable,ID extends Numbe
             em.getTransaction().commit();
         }catch (Exception e) {
             em.getTransaction().rollback();
-        }finally {
-            em.close();
+
         }
         return t;
     }

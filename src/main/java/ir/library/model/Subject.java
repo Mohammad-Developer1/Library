@@ -18,6 +18,8 @@ public class Subject implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    private String title;
+
     @OneToOne
     @JoinColumn(name = "category_id")
     private Category category;
