@@ -1,6 +1,6 @@
-package ir.library.Repository.impl;
+package ir.library.Repository.base.baseimpl;
 
-import ir.library.Repository.BaseRepository;
+import ir.library.Repository.base.BaseRepository;
 import jakarta.persistence.EntityManager;
 
 import java.io.Serializable;
@@ -53,7 +53,7 @@ public abstract class BaseRepositoryImpl<T extends Serializable,ID extends Numbe
         return t ;
     }
 
-
     public abstract Class<T> getEntityClass();
+
     public abstract String getFindQuery();
 }

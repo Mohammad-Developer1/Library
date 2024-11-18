@@ -1,6 +1,7 @@
 package ir.library.Repository.impl;
 
 import ir.library.Repository.SubjectRepository;
+import ir.library.Repository.base.baseimpl.BaseRepositoryImpl;
 import ir.library.model.Subject;
 
 public class SubjectRepositoryImpl extends BaseRepositoryImpl<Subject,Integer> implements SubjectRepository {

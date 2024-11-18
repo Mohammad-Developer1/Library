@@ -1,5 +1,6 @@
 package ir.library.Repository;
 
+import ir.library.Repository.base.BaseRepository;
 import ir.library.model.Subject;
 
 import java.util.List;

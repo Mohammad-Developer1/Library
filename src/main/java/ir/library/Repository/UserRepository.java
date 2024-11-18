@@ -1,20 +1,20 @@
 package ir.library.Repository;
 
 import ir.library.Repository.base.BaseRepository;
-import ir.library.model.Book;
+import ir.library.model.User;
 
 import java.util.List;
 
-public interface BookRepository extends BaseRepository<Book, Integer> {
+public interface UserRepository extends BaseRepository<User,Integer> {
     @Override
-    Book upsert(Book book);
+    User upsert(User user);
 
     @Override
     Boolean delete(Integer integer);
 
     @Override
-    Book findID(Integer integer);
+    User findID(Integer integer);
 
     @Override
-    List<Book> findAll();
+    List<User> findAll();
 }
