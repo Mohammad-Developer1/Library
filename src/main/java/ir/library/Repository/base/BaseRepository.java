@@ -5,7 +5,9 @@ import java.util.List;
 
 public interface BaseRepository<T extends Serializable,ID extends  Number> {
 
-    T upsert(T t);
+    T save(T t);
+
+    T update(T t);
 
     Boolean delete(ID id);
 

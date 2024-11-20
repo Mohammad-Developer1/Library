@@ -7,7 +7,10 @@ import java.util.List;
 
 public interface SubjectRepository extends BaseRepository<Subject, Integer> {
     @Override
-    Subject upsert(Subject subject);
+    Subject save(Subject subject);
+
+    @Override
+    Subject update(Subject subject);
 
     @Override
     Boolean delete(Integer id);

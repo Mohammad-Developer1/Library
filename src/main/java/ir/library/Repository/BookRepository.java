@@ -7,7 +7,10 @@ import java.util.List;
 
 public interface BookRepository extends BaseRepository<Book, Integer> {
     @Override
-    Book upsert(Book book);
+    Book save(Book book);
+
+    @Override
+    Book update(Book book);
 
     @Override
     Boolean delete(Integer integer);

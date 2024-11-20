@@ -7,7 +7,10 @@ import java.util.List;
 
 public interface UserRepository extends BaseRepository<User,Integer> {
     @Override
-    User upsert(User user);
+    User save(User user);
+
+    @Override
+    User update(User user);
 
     @Override
     Boolean delete(Integer integer);

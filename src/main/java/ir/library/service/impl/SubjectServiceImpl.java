@@ -14,12 +14,29 @@ public class SubjectServiceImpl implements SubjectService {
         this.sr = sr;
     }
 
+//    @Override
+//    public Subject upsert(Subject subject) {
+//        if (subject == null){
+//            throw  new NullPointerException("subject is null");
+//        }
+//        return sr.upsert(subject);
+//    }
+
+
     @Override
-    public Subject upsert(Subject subject) {
-        if (subject == null){
-            throw  new NullPointerException("subject is null");
+    public Subject save(Subject subject) {
+        if (subject == null) {
+            throw new NullPointerException("subject is null");
         }
-        return sr.upsert(subject);
+        return sr.save(subject);
+    }
+
+    @Override
+    public Subject update(Subject subject) {
+        if (subject == null) {
+            throw new NullPointerException("subject is null");
+        }
+        return sr.update(subject);
     }
 
     @Override
@@ -38,9 +55,10 @@ public class SubjectServiceImpl implements SubjectService {
             System.out.format("\033[1;35m"+"|  ID  |      Title      |%n");
             System.out.format("\033[1;35m"+"+------+-----------------+%n");
             for (Subject subject1 : subject) {
-                System.out.printf("\033[1;35m" + "|" + "\033[1;34m" + " %-15s" + "\033[1;35m" + " |" + "\033[1;34m" + " %-4s" + "\033[1;35m" + " |" + "\n",
-                        subject1.getTitle(),
-                        subject1.getId());
+                System.out.printf("\033[1;35m" + "|" + "\033[1;34m" + " %-5s" + "\033[1;35m" + "|" + "\033[1;34m" + " %-16s" + "\033[1;35m" + "|" + "\n",
+                        subject1.getId(),
+                        subject1.getTitle());
+
 
             }
             System.out.format("\033[1;35m"+"+------+-----------------+%n");

@@ -4,21 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40af5761-4cb1-412f-b1b8-f48b46586ff2" name="Changes" comment="update repository">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/892a393d-4787-41d1-bb51-ff35642f7744.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/892a393d-4787-41d1-bb51-ff35642f7744.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/892a393d-4787-41d1-bb51-ff35642f7744/storage_v2/_src_/database/library.uyToCQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/892a393d-4787-41d1-bb51-ff35642f7744/storage_v2/_src_/database/library.uyToCQ/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="40af5761-4cb1-412f-b1b8-f48b46586ff2" name="Changes" comment="update&#10;&#10;Add UserRepository&#10;&#10;Add All service &#10;&#10;Add class ApplicationContext &#10;&#10;Add print List&lt;Subject&gt;&#10;&#10;Add printAllSubjectWithBooks List&lt;Subject&gt; &gt;= 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Repository/base/BaseRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Repository/BookRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Repository/CategoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Repository/SubjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Repository/SubjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Repository/impl/BaseRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Repository/base/baseimpl/BaseRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Repository/base/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Repository/base/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Repository/base/baseimpl/BaseRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Repository/base/baseimpl/BaseRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Repository/impl/BookRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Repository/impl/BookRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Repository/impl/CategoryRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Repository/impl/CategoryRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Repository/impl/SubjectRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Repository/impl/SubjectRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/Repository/impl/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/Repository/impl/UserRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/model/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/model/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/service/SubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/service/SubjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/library/service/impl/SubjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/library/service/impl/SubjectServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +133,8 @@
       <option name="presentableId" value="Default" />
       <updated>1731840494889</updated>
       <workItem from="1731840496085" duration="8984000" />
-      <workItem from="1731951774488" duration="5068000" />
+      <workItem from="1731951774488" duration="5609000" />
+      <workItem from="1732081805774" duration="3273000" />
     </task>
     <task id="LOCAL-00001" summary="Add Library System&#10;&#10;and&#10;&#10;Add All Entity and relationship&#10;&#10;and&#10;&#10;Add BaseRepository&#10;&#10;and&#10;&#10;Add class EntityManagerProvider">
       <option name="closed" value="true" />
@@ -150,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731849162931</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update&#10;&#10;Add UserRepository&#10;&#10;Add All service &#10;&#10;Add class ApplicationContext &#10;&#10;Add print List&lt;Subject&gt;&#10;&#10;Add printAllSubjectWithBooks List&lt;Subject&gt; &gt;= 1">
+      <option name="closed" value="true" />
+      <created>1731957256758</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731957256758</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +169,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Library System&#10;&#10;and&#10;&#10;Add All Entity and relationship&#10;&#10;and&#10;&#10;Add BaseRepository&#10;&#10;and&#10;&#10;Add class EntityManagerProvider" />
     <MESSAGE value="update repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="update repository" />
+    <MESSAGE value="update&#10;&#10;Add UserRepository&#10;&#10;Add All service &#10;&#10;Add class ApplicationContext &#10;&#10;Add print List&lt;Subject&gt;&#10;&#10;Add printAllSubjectWithBooks List&lt;Subject&gt; &gt;= 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="update&#10;&#10;Add UserRepository&#10;&#10;Add All service &#10;&#10;Add class ApplicationContext &#10;&#10;Add print List&lt;Subject&gt;&#10;&#10;Add printAllSubjectWithBooks List&lt;Subject&gt; &gt;= 1" />
   </component>
 </project>

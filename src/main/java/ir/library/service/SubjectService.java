@@ -6,7 +6,9 @@ import java.util.List;
 
 public interface SubjectService {
 
-    Subject upsert(Subject subject);
+    Subject save(Subject subject);
+
+    Subject update(Subject subject);
 
     Boolean delete(Integer id);
 

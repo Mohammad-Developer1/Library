@@ -7,7 +7,10 @@ import java.util.List;
 
 public interface CategoryRepository extends BaseRepository<Category, Integer> {
     @Override
-    Category upsert(Category category);
+    Category save(Category category);
+
+    @Override
+    Category update(Category category);
 
     @Override
     Boolean delete(Integer integer);
