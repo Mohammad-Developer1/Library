@@ -56,12 +56,12 @@ public class SubjectServiceImpl implements SubjectService {
             System.out.format("\033[1;35m"+"+------+-----------------+%n");
             for (Subject subject1 : subject) {
                 System.out.printf("\033[1;35m" + "|" + "\033[1;34m" + " %-5s" + "\033[1;35m" + "|" + "\033[1;34m" + " %-16s" + "\033[1;35m" + "|" + "\n",
-                        subject1.getId(),
-                        subject1.getTitle());
-
+                      " "+  subject1.getId(),
+                     "     " +  subject1.getTitle());
+                System.out.format("\033[1;35m"+"+------+-----------------+%n");
 
             }
-            System.out.format("\033[1;35m"+"+------+-----------------+%n");
+
 
         } catch (Exception e) {
             System.out.println("there is problem with connecting to database");
@@ -78,12 +78,12 @@ public class SubjectServiceImpl implements SubjectService {
             System.out.format("\033[1;35m"+"|  ID  |      Title      |%n");
             System.out.format("\033[1;35m"+"+------+-----------------+%n");
             for (Subject subject1 : subject) {
-                System.out.printf("\033[1;35m" + "|" + "\033[1;34m" + " %-15s" + "\033[1;35m" + " |" + "\033[1;34m" + " %-4s" + "\033[1;35m" + " |" + "\n",
-                        subject1.getTitle(),
-                        subject1.getId());
-
+                System.out.printf("\033[1;35m" + "|" + "\033[1;34m" + " %-4s" + "\033[1;35m" + " |" + "\033[1;34m" + " %-15s" + "\033[1;35m" + " |" + "\n",
+                        " "+  subject1.getId(),
+                        "     " +  subject1.getTitle());
+                System.out.format("\033[1;35m"+"+------+-----------------+%n");
             }
-            System.out.format("\033[1;35m"+"+------+-----------------+%n");
+
 
         } catch (Exception e) {
             System.out.println("there is problem with connecting to database");
